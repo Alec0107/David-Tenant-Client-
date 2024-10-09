@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/white">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/ImageProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/NameProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:text="London Diaries Summer Flowers - White"/>
+
+    <TextView
+        android:id="@+id/PriceProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:alpha="0.7"
+        android:fontFamily="serif"
+        android:text="$70.00"/>
+
+
+</LinearLayout>

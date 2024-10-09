@@ -1,0 +1,128 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"/>
+
+    <!-- FOR THE STORE'S NAME HEADER -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/Storenameheader"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Storename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="DAVID TENANT"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/bag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/bag"/>
+
+
+                <!--FOR BAG PRODUCT QTY -->
+                <FrameLayout
+                    android:id="@+id/BagQty"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="39dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/circle"/>
+
+                    <TextView
+                        android:id="@+id/qtyNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="4.5dp"
+                        android:text="03"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"/>
+                </FrameLayout>
+                <!--FOR BAG PRODUCT QTY -->
+
+            </RelativeLayout>
+
+        </FrameLayout>
+        <!-- FOR THE STORE'S NAME HEADER -->
+
+        <View
+            android:id="@+id/partition"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/black"
+            android:layout_below="@+id/Storenameheader">
+        </View>
+
+
+
+
+        <!--FOR FRAGMENT-->
+        <!--FOR FRAGMENT-->
+
+
+
+
+        <!-- FOR NAVIGATION BAR -->
+        <FrameLayout
+            android:id="@+id/Fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/partition"
+            android:layout_above="@+id/Botton_nav"
+            android:background="@color/white">
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/Botton_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            app:itemIconTint="@color/color_selector"
+            app:itemTextColor="@color/color_selector"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_nav_menu" >
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+        <!-- FOR NAVIGATION BAR -->
+
+    </RelativeLayout>
+
+</LinearLayout>

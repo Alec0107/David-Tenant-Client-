@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DT</string>
+    <string name="prelogin_txt">Discover the latest. Continue to log in or sign up!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="jacketcategory">Jacket &amp; Coat</string>
+    <string name="signupWelcomeMsg">"Welcome aboard! We're thrilled to have you as part of our fashion family."</string>
+
+</resources>
+

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AUTH.View_Activity.ProductDetail">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"/>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Storename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Product Details"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/bag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/bag"/>
+
+            <!--FOR BAG PRODUCT QTY -->
+            <FrameLayout
+                android:id="@+id/BagQty"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="39dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/circle">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/qtyNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="4.5dp"
+                    android:text="03"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"/>
+            </FrameLayout>
+            <!--FOR BAG PRODUCT QTY -->
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+
+    <View
+        android:id="@+id/partition"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/black"
+        android:layout_below="@+id/Storenameheader">
+    </View>
+
+    <!-- Image and texts -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- Name, Price, Description, size -->
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:id="@+id/ProductImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="500dp"
+                            android:src="@drawable/wp">
+
+                        </ImageView>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/ProductName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="serif"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:text="CHECK SHIRT"/>
+
+                    <TextView
+                        android:id="@+id/ProductDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/black"
+                        android:text="Relaxed fit shirt made of lightweight fabric. Featuring a camp collar, short sleeve and a button-up front."/>
+
+
+                        <TextView
+                            android:id="@+id/ProductPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="serif"
+                            android:textColor="@color/black"
+                            android:text="$150.00"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/bggreen"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="serif"
+                        android:text="Select size:"/>
+
+
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <Button
+                                android:id="@+id/Small"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/sizebutton"
+                                android:layout_marginLeft="20dp"
+                                android:layout_alignParentLeft="true"
+                                android:textColor="@color/black"
+                                android:text="S"/>
+
+                            <Button
+                                android:id="@+id/Medium"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/sizebutton"
+                                android:layout_marginStart="5dp"
+                                android:layout_toRightOf="@+id/Small"
+                                android:textColor="@color/black"
+                                android:text="M" />
+
+                            <Button
+                                android:id="@+id/Large"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/sizebutton"
+                                android:layout_toRightOf="@+id/Medium"
+                                android:textColor="@color/black"
+                                android:text="L"/>
+
+                            <Button
+                                android:id="@+id/XLarge"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/sizebutton"
+                                android:layout_toRightOf="@+id/Large"
+                                android:textColor="@color/black"
+                                android:text="XL"/>
+
+                            <Button
+                                android:id="@+id/XXLarge"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/sizebutton"
+                                android:layout_toRightOf="@+id/XLarge"
+                                android:textColor="@color/black"
+                                android:text="XXL"/>
+
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/bggreen"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:padding="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/EditorsnoteTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:fontFamily="serif"
+                                android:lineSpacingExtra="8dp"
+                                android:textColor="@color/black"
+                                android:text="Editor's Notes">
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/EditorsNote"
+                                android:layout_below="@+id/EditorsnoteTitle"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="20dp"
+                                android:layout_height="150dp"
+                                android:fontFamily="serif"
+                                android:lineSpacingExtra="8dp"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="">
+                            </TextView>
+
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+                    </View>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+
+
+
+        <!-- For add to cart frame -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/BagButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:fontFamily="serif"
+                    android:background="@drawable/button"
+                    android:text="Add to Bag">
+                </Button>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+        <!-- For add to cart frame -->
+
+
+    </RelativeLayout> <!-- Image and texts -->
+
+</LinearLayout>
